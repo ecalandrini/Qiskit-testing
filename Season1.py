@@ -84,7 +84,7 @@ print(unitary)
 
 #%% Quantum teleportation
 '''
-teleport the qubit 0 to qubit 2
+teleport the qubit 0 initialized to |0> to qubit 2
 '''
 
 # build a quantum circuit with 3 qubits and 3 bits
@@ -114,7 +114,7 @@ plot_distribution(counts)
 
 #%% Quantum teleportation 2
 '''
-teleport the qubit 0 to qubit 2
+teleport the qubit 0 initialized to |+> to qubit 2
 '''
 
 # build a quantum circuit with 3 qubits and 3 bits
@@ -144,6 +144,9 @@ plot_distribution(counts)
 
 #%%
 
+'''
+implementation of the Bernstein-Vazirani Algorithm
+'''
 secretnumber = '1'
 
 circuit = QuantumCircuit(len(secretnumber)+1, len(secretnumber))
